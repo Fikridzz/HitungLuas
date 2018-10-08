@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:padding="15dp"
+        android:text="Silahkan masukan nama anda" />
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menghitung luas persegi panjang :"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edtPanjang"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Isi panjang"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edtLebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Isi lebar"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hitung" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:text="Hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"/>
+
+</LinearLayout>
